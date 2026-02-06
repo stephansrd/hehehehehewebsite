@@ -1,7 +1,3 @@
-function showGallery(){
-  document.getElementById("gallery").classList.remove("hidden");
-}
-
 function showQuiz(){
   document.getElementById("quiz").classList.remove("hidden");
 }
@@ -11,9 +7,9 @@ function showFinal(){
   setupNoButton();
 }
 
-function checkAnswer(correct){
+function checkAnswer(button, correct){
   let result=document.getElementById("quizResult");
-  result.innerText=correct ? "Correct 😍" : "Wrong 😂 but I still love you!";
+  result.innerText = correct ? "Correct 😍" : "Wrong 😂 but I still love you!";
 }
 
 function yes(){
